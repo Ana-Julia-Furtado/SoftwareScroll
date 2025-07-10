@@ -28,6 +28,7 @@ const categories = [
   { id: "analytics", name: "Análise de Dados", icon: BarChart3, count: 3 },
   { id: "code", name: "Programação", icon: Code, count: 2 },
   { id: "audio", name: "Áudio", icon: Music, count: 1 },
+  { id: "pesquisa", name: "Pesquisa", icon: BarChart3, count: 1 },
 ]
 
 const aiTools = [
