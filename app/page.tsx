@@ -163,6 +163,17 @@ const aiTools = [
     features: ["Clonagem de voz", "Múltiplos idiomas", "Alta qualidade"],
     logo: "🎤",
   },
+    {
+    id: 13,
+    name: "Anara",
+    description: "Pesquisa cientifica com IA",
+    category: "pesquisa",
+    price: "Freemium",
+    rating: 4.7,
+    website: "https://anara.com/new",
+    features: ["Pesquisa"],
+    logo: "📊",
+  },
 ]
 
 export default function AIToolsLibrary() {
