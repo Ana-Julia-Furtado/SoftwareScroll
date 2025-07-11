@@ -175,6 +175,17 @@ const aiTools = [
     features: ["Pesquisa"],
     logo: "📊",
   },
+      {
+    id: 14,
+    name: "TLDL",
+    description: "Pesquisa cientifica com IA",
+    category: "pesquisa",
+    price: "Freemium",
+    rating: 4.7,
+    website: "https://tldl.club/en/notes",
+    features: ["Pesquisa"],
+    logo: "📊",
+  },
 ]
 
 export default function AIToolsLibrary() {
