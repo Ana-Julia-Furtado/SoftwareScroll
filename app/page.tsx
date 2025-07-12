@@ -29,6 +29,7 @@ const categories = [
   { id: "code", name: "Programação", icon: Code, count: 2 },
   { id: "audio", name: "Áudio", icon: Music, count: 1 },
   { id: "pesquisa", name: "Pesquisa", icon: BarChart3, count: 1 },
+  { id: "estudo", name: "Estudo", icon: BarChart3, count: 1 },
 ]
 
 const aiTools = [
@@ -178,12 +179,12 @@ const aiTools = [
       {
     id: 14,
     name: "TLDL",
-    description: "Pesquisa cientifica com IA",
+    description: "Grava aulas ou reuniões e automaticamente transforma os áudios ou PDFs em notas inteligentes, flashcards, quizzes e resumos",
     category: "pesquisa",
     price: "Freemium",
     rating: 4.7,
     website: "https://tldl.club/en/notes",
-    features: ["Pesquisa"],
+    features: ["Estudo"],
     logo: "📊",
   },
 ]
