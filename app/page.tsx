@@ -1,19 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import {
-  Search,
-  Filter,
-  Star,
-  ExternalLink,
-  Zap,
-  Brain,
-  ImageIcon,
-  MessageSquare,
-  BarChart3,
-  Code,
-  Music,
-} from "lucide-react"
+import {Search, Filter, Star, ExternalLink, Zap, Brain, ImageIcon, MessageSquare,
+  BarChart3, Code, Music, Atom} from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -30,6 +19,7 @@ const categories = [
   { id: "audio", name: "Áudio", icon: Music, count: 1 },
   { id: "pesquisa", name: "Pesquisa", icon: BarChart3, count: 1 },
   { id: "estudo", name: "Estudo", icon: BarChart3, count: 1 },
+  { id: "componente", name: "Componentes Prontos", icon: Atom, count: 1 },
 ]
 
 const aiTools = [
@@ -187,6 +177,28 @@ const aiTools = [
     features: ["Estudo"],
     logo: "📊",
   },
+  {
+    id: 15,
+    name: "UIVERSE",
+    description: "Biblioteca de componentes prontos para React, CSS, TaiWind e HTML",
+    category: "Componente",
+    price: "Gratuito",
+    rating: 4.7,
+    website: "https://uiverse.io",
+    features: ["Componentes Prontos", "programação"],
+    logo: "📊",
+  },
+  {
+    id: 15,
+    name: "Lucide React Icons",
+    description: "Ícones de código aberto para React",
+    category: "Componente",
+    price: "Gratuito",
+    rating: 4.7,
+    website: "https://lucide.dev/icons",
+    features: ["Componentes Prontos", "programação"],
+    logo: "📊",
+  },
 ]
 
 export default function AIToolsLibrary() {
@@ -220,9 +232,9 @@ export default function AIToolsLibrary() {
             <div>
               <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-2">
                 <Brain className="h-8 w-8 text-blue-600" />
-                Biblioteca de IA
+                Biblioteca de Ferramentas
               </h1>
-              <p className="text-gray-600 mt-1">Descubra as melhores ferramentas de inteligência artificial</p>
+              <p className="text-gray-600 mt-1">Descubra as melhores ferramentas</p>
             </div>
             <div className="flex items-center gap-4">
               <Badge variant="secondary" className="text-sm">
