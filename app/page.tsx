@@ -20,6 +20,7 @@ const categories = [
   { id: "pesquisa", name: "Pesquisa", icon: BarChart3, count: 1 },
   { id: "estudo", name: "Estudo", icon: BarChart3, count: 1 },
   { id: "componente", name: "Componentes Prontos", icon: Atom, count: 1 },
+  { id: "curso", name: "Curso", icon: book-open, count: 1 },
 ]
 
 const aiTools = [
@@ -236,7 +237,7 @@ const aiTools = [
     id: 19,
     name: "Kaggle",
     description: "Learn python, Data vizualization, panda and more",
-    category: "Componente",
+    category: "curso",
     price: "Gratuito",
     rating: 4.7,
     website: "https://www.kaggle.com/learn",
