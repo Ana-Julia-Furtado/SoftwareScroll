@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import {Search, Filter, Star, ExternalLink, Zap, Brain, ImageIcon, MessageSquare,
-  BarChart3, Code, Music, Atom, book-open} from "lucide-react"
+  BarChart3, Code, Music, Atom, BookOpen} from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -20,7 +20,7 @@ const categories = [
   { id: "pesquisa", name: "Pesquisa", icon: BarChart3, count: 1 },
   { id: "estudo", name: "Estudo", icon: BarChart3, count: 1 },
   { id: "componente", name: "Componentes Prontos", icon: Atom, count: 1 },
-  { id: "curso", name: "Curso", icon: book-open, count: 1 },
+  { id: "curso", name: "Curso", icon: BookOpen, count: 1 },
 ]
 
 const aiTools = [
