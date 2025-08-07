@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import {Search, Filter, Star, ExternalLink, Zap, Brain, ImageIcon, MessageSquare,
-  BarChart3, Code, Music, Atom} from "lucide-react"
+  BarChart3, Code, Music, Atom, book-open} from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -245,7 +245,7 @@ const aiTools = [
     logo: "📊",
   },
     {
-    id: 19,
+    id: 20,
     name: "Lordicon",
     description: "Arsenal de ícones",
     category: "Componente",
