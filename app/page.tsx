@@ -255,7 +255,7 @@ const aiTools = [
     features: ["Componentes Prontos", "programação"],
     logo: "📊",
   },
-      {
+  {
     id: 21,
     name: "QuickRef",
     description: "Here are some cheatsheets and quick references contributed by open source angels.",
@@ -263,6 +263,17 @@ const aiTools = [
     price: "Gratuito",
     rating: 4.7,
     website: "https://quickref.me/index.html",
+    features: ["programação"],
+    logo: "📊",
+  },
+{
+    id: 22,
+    name: "Flutter Templates",
+    description: "A curated collection of production-ready Flutter templates and snippets. Build beautiful apps faster with our open-source components, designed for modern mobile and web applications.",
+    category: "code",
+    price: "Gratuito",
+    rating: 4.7,
+    website: "https://fluttertemplates.dev",
     features: ["programação"],
     logo: "📊",
   },
