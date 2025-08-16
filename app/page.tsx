@@ -255,6 +255,17 @@ const aiTools = [
     features: ["Componentes Prontos", "programação"],
     logo: "📊",
   },
+      {
+    id: 21,
+    name: "QuickRef",
+    description: "Here are some cheatsheets and quick references contributed by open source angels.",
+    category: "code",
+    price: "Gratuito",
+    rating: 4.7,
+    website: "https://quickref.me/index.html",
+    features: ["programação"],
+    logo: "📊",
+  },
 ]
 
 export default function AIToolsLibrary() {
