@@ -14,7 +14,11 @@ body {
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: #3f8955;
+=======
+    --background: 0 0% 100%;
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -49,7 +53,11 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
+<<<<<<< HEAD
     --background: #4e3f89;
+=======
+    --background: 0 0% 3.9%;
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;

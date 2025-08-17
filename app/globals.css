@@ -14,7 +14,11 @@ body {
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: #893f3f;
+=======
+    --background: 0 0% 100%;
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;

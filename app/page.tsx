@@ -1,5 +1,6 @@
 "use client"
 
+<<<<<<< HEAD
 import type React from "react"
 import { useState } from "react"
 import Sidebar from "../components/Sidebar"
@@ -18,12 +19,18 @@ import {
   BookOpen,
 } from "lucide-react"
 
+=======
+import { useState } from "react"
+import {Search, Filter, Star, ExternalLink, Zap, Brain, ImageIcon, MessageSquare,
+  BarChart3, Code, Music, Atom, BookOpen} from "lucide-react"
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
+<<<<<<< HEAD
 interface Category {
   id: string
   name: string
@@ -44,6 +51,9 @@ interface AITool {
 }
 
 const categories: Category[] = [
+=======
+const categories = [
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
   { id: "all", name: "Todas", icon: Zap, count: 24 },
   { id: "text", name: "Geração de Texto", icon: Brain, count: 8 },
   { id: "image", name: "Geração de Imagem", icon: ImageIcon, count: 6 },
@@ -224,7 +234,11 @@ const aiTools = [
     logo: "📊",
   },
   {
+<<<<<<< HEAD
     id: 16,
+=======
+    id: 15,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Lucide React Icons",
     description: "Ícones de código aberto para React",
     category: "Componente",
@@ -235,7 +249,11 @@ const aiTools = [
     logo: "📊",
   },
     {
+<<<<<<< HEAD
     id: 17,
+=======
+    id: 16,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "React Bits",
     description: "Componentes de react",
     category: "Componente",
@@ -246,7 +264,11 @@ const aiTools = [
     logo: "📊",
   },
     {
+<<<<<<< HEAD
     id: 18,
+=======
+    id: 17,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Anime js",
     description: "Engine JavaScript",
     category: "Componente",
@@ -257,7 +279,11 @@ const aiTools = [
     logo: "📊",
   },
     {
+<<<<<<< HEAD
     id: 19,
+=======
+    id: 18,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Learn to Hack",
     description: "Completely free, comprehensive security training for web developers. Covers every major security vulnerability you are likely to face. Concrete, no-nonsense advice for the developer in a hurry.",
     category: "Componente",
@@ -268,7 +294,11 @@ const aiTools = [
     logo: "📊",
   },
     {
+<<<<<<< HEAD
     id: 20,
+=======
+    id: 19,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Kaggle",
     description: "Learn python, Data vizualization, panda and more",
     category: "curso",
@@ -279,7 +309,11 @@ const aiTools = [
     logo: "📊",
   },
     {
+<<<<<<< HEAD
     id: 21,
+=======
+    id: 20,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Lordicon",
     description: "Arsenal de ícones",
     category: "Componente",
@@ -290,7 +324,11 @@ const aiTools = [
     logo: "📊",
   },
   {
+<<<<<<< HEAD
     id: 22,
+=======
+    id: 21,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "QuickRef",
     description: "Here are some cheatsheets and quick references contributed by open source angels.",
     category: "code",
@@ -301,7 +339,11 @@ const aiTools = [
     logo: "📊",
   },
 {
+<<<<<<< HEAD
     id: 23,
+=======
+    id: 22,
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
     name: "Flutter Templates",
     description: "A curated collection of production-ready Flutter templates and snippets. Build beautiful apps faster with our open-source components, designed for modern mobile and web applications.",
     category: "code",
@@ -314,10 +356,17 @@ const aiTools = [
 ]
 
 export default function AIToolsLibrary() {
+<<<<<<< HEAD
   const [searchTerm, setSearchTerm] = useState<string>("")
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
   const [priceFilter, setPriceFilter] = useState<string>("all")
   const [sortBy, setSortBy] = useState<string>("rating")
+=======
+  const [searchTerm, setSearchTerm] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("all")
+  const [priceFilter, setPriceFilter] = useState("all")
+  const [sortBy, setSortBy] = useState("rating")
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
 
   const filteredTools = aiTools
     .filter((tool) => {
@@ -337,6 +386,7 @@ export default function AIToolsLibrary() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+<<<<<<< HEAD
       <Sidebar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} categories={categories} />
 
       <div className="ml-64">
@@ -490,6 +540,192 @@ export default function AIToolsLibrary() {
                 </div>
                 <div className="text-sm text-gray-600">Avaliação Média</div>
               </div>
+=======
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-2">
+                <Brain className="h-8 w-8 text-blue-600" />
+                Biblioteca de Ferramentas
+              </h1>
+              <p className="text-gray-600 mt-1">Descubra as melhores ferramentas</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Badge variant="secondary" className="text-sm">
+                {filteredTools.length} ferramentas encontradas
+              </Badge>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Search and Filters */}
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="flex-1">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                <Input
+                  placeholder="Buscar ferramentas de IA..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-10"
+                />
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <Select value={priceFilter} onValueChange={setPriceFilter}>
+                <SelectTrigger className="w-40">
+                  <SelectValue placeholder="Preço" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">Todos os preços</SelectItem>
+                  <SelectItem value="gratuito">Gratuito</SelectItem>
+                  <SelectItem value="freemium">Freemium</SelectItem>
+                  <SelectItem value="pago">Pago</SelectItem>
+                </SelectContent>
+              </Select>
+              <Select value={sortBy} onValueChange={setSortBy}>
+                <SelectTrigger className="w-40">
+                  <SelectValue placeholder="Ordenar por" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="rating">Avaliação</SelectItem>
+                  <SelectItem value="name">Nome</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Categories Sidebar */}
+          <div className="lg:col-span-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Filter className="h-5 w-5" />
+                  Categorias
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                {categories.map((category) => {
+                  const Icon = category.icon
+                  return (
+                    <Button
+                      key={category.id}
+                      variant={selectedCategory === category.id ? "default" : "ghost"}
+                      className="w-full justify-start"
+                      onClick={() => setSelectedCategory(category.id)}
+                    >
+                      <Icon className="h-4 w-4 mr-2" />
+                      {category.name}
+                      <Badge variant="secondary" className="ml-auto">
+                        {category.count}
+                      </Badge>
+                    </Button>
+                  )
+                })}
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Tools Grid */}
+          <div className="lg:col-span-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {filteredTools.map((tool) => (
+                <Card key={tool.id} className="hover:shadow-lg transition-shadow duration-200">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="text-2xl">{tool.logo}</div>
+                        <div>
+                          <CardTitle className="text-lg">{tool.name}</CardTitle>
+                          <div className="flex items-center gap-2 mt-1">
+                            <div className="flex items-center">
+                              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                              <span className="text-sm text-gray-600 ml-1">{tool.rating}</span>
+                            </div>
+                            <Badge
+                              variant={
+                                tool.price === "Gratuito"
+                                  ? "default"
+                                  : tool.price === "Freemium"
+                                    ? "secondary"
+                                    : "outline"
+                              }
+                            >
+                              {tool.price}
+                            </Badge>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="mb-4">{tool.description}</CardDescription>
+                    <div className="space-y-3">
+                      <div>
+                        <h4 className="text-sm font-medium text-gray-900 mb-2">Recursos principais:</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {tool.features.map((feature, index) => (
+                            <Badge key={index} variant="outline" className="text-xs">
+                              {feature}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                      <Button className="w-full" asChild>
+                        <a href={tool.website} target="_blank" rel="noopener noreferrer">
+                          Visitar Site
+                          <ExternalLink className="h-4 w-4 ml-2" />
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {filteredTools.length === 0 && (
+              <div className="text-center py-12">
+                <div className="text-gray-400 mb-4">
+                  <Search className="h-12 w-12 mx-auto" />
+                </div>
+                <h3 className="text-lg font-medium text-gray-900 mb-2">Nenhuma ferramenta encontrada</h3>
+                <p className="text-gray-600">Tente ajustar seus filtros ou termo de busca.</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-12 bg-white rounded-lg shadow-sm p-6">
+          <h2 className="text-xl font-semibold mb-4">Estatísticas da Biblioteca</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-blue-600">{aiTools.length}</div>
+              <div className="text-sm text-gray-600">Total de Ferramentas</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-green-600">{categories.length - 1}</div>
+              <div className="text-sm text-gray-600">Categorias</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-purple-600">
+                {aiTools.filter((tool) => tool.price === "Gratuito").length}
+              </div>
+              <div className="text-sm text-gray-600">Ferramentas Gratuitas</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-orange-600">
+                {(aiTools.reduce((acc, tool) => acc + tool.rating, 0) / aiTools.length).toFixed(1)}
+              </div>
+              <div className="text-sm text-gray-600">Avaliação Média</div>
+>>>>>>> e42ab2993080f77fa39ab1c0b9b4afd5f51f2fbf
             </div>
           </div>
         </div>
